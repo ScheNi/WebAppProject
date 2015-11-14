@@ -38,6 +38,12 @@ module.exports = function (grunt) {
             js: {
                 files: ['public/src/js/**/*.js'],
                 tasks: ['jshint', 'uglify']
+            },
+            html: {
+                files: ['public/dist/**/*.html']
+            },
+            options: {
+                livereload: true
             }
         },
 
@@ -51,7 +57,7 @@ module.exports = function (grunt) {
             options: {
                 logConcurrentOutput: true
             },
-            tasks: ['nodemon', 'watch']
+            tasks: ['nodemon', 'connect', 'watch']
         },
 
         connect: {
@@ -60,14 +66,13 @@ module.exports = function (grunt) {
                     port: 9000,
                     hostname: "localhost",
                     base: "public/dist",
+                    livereload: true,
+                    open: {
+                        target: 'http://localhost:9000',
+                        appName: 'Google Chrome'
+                    },
                     keepalive: true
                 }
-            }
-        },
-        open: {
-            all: {
-                path: 'http://127.0.0.1:9000',
-                app: 'Google Chrome'
             }
         }
 
@@ -81,11 +86,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-open');
 
     grunt.registerTask('default', ['sass', 'cssmin', 'jshint', 'uglify', 'concurrent']);
-
-    grunt.registerTask('serve', ['open', 'connect']);
 
 
 };
