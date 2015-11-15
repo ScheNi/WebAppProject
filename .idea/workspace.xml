@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60f9d8a-8e81-48c6-bf1a-090908bc4d2c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/js/controllers/PostsCtrl.js" afterPath="$PROJECT_DIR$/public/src/js/controllers/PostsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/js/services/PostsFactory.js" afterPath="$PROJECT_DIR$/public/src/js/services/PostsFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/js/app.js" afterPath="$PROJECT_DIR$/public/src/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/js/app.min.js" afterPath="$PROJECT_DIR$/public/dist/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/views/home.html" afterPath="$PROJECT_DIR$/public/dist/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/posts.js" afterPath="$PROJECT_DIR$/app/routes/posts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="WebAppProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes/posts.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65068495" vertical-offset="1519" max-vertical-offset="2541">
-              <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.78" vertical-offset="0" max-vertical-offset="1050">
+              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -61,7 +57,6 @@
         <option value="$PROJECT_DIR$/public/dist/index.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app/models/Posts.js" />
         <option value="$PROJECT_DIR$/app/models/Comments.js" />
         <option value="$PROJECT_DIR$/public/dist/js/app.min.js" />
@@ -72,6 +67,10 @@
         <option value="$PROJECT_DIR$/public/src/js/services/PostsFactory.js" />
         <option value="$PROJECT_DIR$/public/src/js/controllers/PostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/routes/posts.js" />
+        <option value="$PROJECT_DIR$/app/models/User.js" />
+        <option value="$PROJECT_DIR$/config/passport.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/app/routes/auth.js" />
       </list>
     </option>
   </component>
@@ -318,6 +317,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -354,7 +367,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/src/js/controllers/PostsCtrl.js&#10;home&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/dist/views/home.html&#10;posts&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/app/routes/posts.js&#10;ind&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/dist/index.ejs&#10;post&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/src/js/services/PostsFactory.js" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/config/passport.js&#10;home&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/dist/views/home.html&#10;posts&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/app/routes/posts.js&#10;ind&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/dist/index.ejs&#10;post&#9;FILE&#9;file:///Users/Nicolas/Development/WebAppProject/public/src/js/services/PostsFactory.js" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
@@ -460,7 +473,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="1701">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,35 +600,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <caret line="0" column="983" selection-start-line="0" selection-start-column="977" selection-end-line="0" selection-end-column="983" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="1575">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1447598912000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1447587361000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,6 +713,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7328767" vertical-offset="1435" max-vertical-offset="2541">
+          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+          <folding>
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447613822000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Posts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1050">
@@ -711,10 +763,392 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/posts.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65068495" vertical-offset="1519" max-vertical-offset="2541">
-          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="21511" max-vertical-offset="55629">
+          <caret line="1041" column="25" selection-start-line="1041" selection-start-column="25" selection-end-line="1041" selection-end-column="25" />
+          <folding>
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Model constructor ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Connection the model uses. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Collection the model uses. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** The name of the model ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Saves this document. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Produces a special query document of the modified properties used in updates. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Appends versioning to the where and update clauses. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Signal that we desire an increment of this documents version. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Returns a query object which applies shardkeys if they exist. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Removes this document from the db. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Returns another Model instance. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Adds a discriminator type. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Called when the model compiles. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Sends `ensureIndex` commands to mongo for each index declared in the schema. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Schema the model uses. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Base Mongoose instance the model uses. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Registered discriminators for this model. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Removes documents from the collection. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Finds documents ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Finds a single document by id. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Finds one document. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Counts number of matching documents in a database collection. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Creates a Query for a `distinct` operation. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Creates a Query, applies the passed conditions, and returns the Query. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Creates a `Query` and specifies a `$where` condition. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Issues a mongodb findAndModify update command. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Issues a mongodb findAndModify update command by a documents id. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Issue a mongodb findAndModify remove command. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Issue a mongodb findAndModify remove command by a documents id. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Shortcut for creating a new Document that is automatically saved to the db if valid. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Updates documents in the database without returning them. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Executes a mapReduce command. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** geoNear support for Mongoose ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Performs [aggregations](http://docs.mongodb.org/manual/applications/aggregation/) on the models collection. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Implements `$geoSearch` functionality for Mongoose ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Populates document references. ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/** Finds the schema for `path`. This is different than ...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1445192054000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1447614902000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447614902000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447614902000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447614902000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Users.js">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76251227" vertical-offset="0" max-vertical-offset="1019">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="1638">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447615111000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <marker date="1447587361000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78" vertical-offset="0" max-vertical-offset="966">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding />
         </state>
       </provider>
