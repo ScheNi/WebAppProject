@@ -5,7 +5,12 @@ angular.module('flapperNews', ['ui.router'])
             .state('home', {
                 url: '/home',
                 templateUrl: '/views/home.html',
-                controller: 'MainCtrl'
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: ['$posts', function($posts){
+                        return $posts.getAll();
+                    }]
+                }
             })
             .state('posts', {
                 url: '/posts/{id}',
