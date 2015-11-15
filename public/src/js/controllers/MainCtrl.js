@@ -3,8 +3,10 @@ angular.module('flapperNews')
 
         $scope.posts = posts.posts;
 
-        $scope.addPost = function(){
-            if(!$scope.title || $scope.title === '') { return; }
+        $scope.addPost = function () {
+            if (!$scope.title || $scope.title === '') {
+                return;
+            }
             $scope.posts.push({
                 title: $scope.title,
                 link: $scope.link,
@@ -18,7 +20,7 @@ angular.module('flapperNews')
             $scope.link = '';
         };
 
-        $scope.incrementUpvotes = function(post) {
+        $scope.incrementUpvotes = function (post) {
             post.upvotes += 1;
         };
 
