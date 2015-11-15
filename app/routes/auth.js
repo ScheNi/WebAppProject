@@ -1,4 +1,5 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var router = express.Router();
 var passport = require('passport');
 var User = mongoose.model('User');
@@ -38,3 +39,5 @@ router.post('/login', function(req, res, next){
         }
     })(req, res, next);
 });
+
+module.exports = router;

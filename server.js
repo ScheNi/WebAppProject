@@ -18,6 +18,7 @@ mongoose.connect('mongodb://localhost/news');
 //routes
 var index = require('./app/routes/index');
 var posts = require('./app/routes/posts');
+var auth  = require('./app/routes/auth');
 
 // view engine setup
 app.set('views', path.join(__dirname, './public/dist'));
@@ -31,6 +32,7 @@ app.use(passport.initialize());
 
 app.use('/', index);
 app.use('/', posts);
+app.use('/auth/', auth);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
