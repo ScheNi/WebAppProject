@@ -7,7 +7,7 @@ angular.module('flapperNews', ['ui.router'])
                 templateUrl: '/views/home.html',
                 controller: 'MainCtrl',
                 resolve: {
-                    postPromise: ['$posts', function($posts){
+                    postPromise: ['$posts', function ($posts) {
                         return $posts.getAll();
                     }]
                 }
@@ -15,7 +15,12 @@ angular.module('flapperNews', ['ui.router'])
             .state('posts', {
                 url: '/posts/{id}',
                 templateUrl: '/views/posts.html',
-                controller: 'PostsCtrl'
+                controller: 'PostsCtrl',
+                resolve: {
+                    post: ['$stateParams', '$posts', function ($stateParams, $posts) {
+                        return $posts.get($stateParams.id);
+                    }]
+                }
             });
 
         $urlRouterProvider.otherwise('home');
