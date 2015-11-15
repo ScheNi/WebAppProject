@@ -98,6 +98,10 @@ router.param('comment', function (req, res, next, id) {
     });
 });
 
+router.get('/posts/:post/comments/:comment', function (req, res, next) {
+    res.json(req.comment);
+});
+
 router.post('/posts/:post/comments/:comment/upvote', function (req, res, next) {
     req.comment.upvote(function (err, comment) {
         if (err) {
