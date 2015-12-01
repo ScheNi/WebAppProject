@@ -1,5 +1,5 @@
 angular.module('flapperNews')
-    .factory('$auth', ['$api', '$window', function ($api, $window) {
+    .factory('$auth', ['$http', '$window', function ($http, $window) {
         var auth = {};
 
         auth.isLoggedIn = function () {
@@ -23,19 +23,21 @@ angular.module('flapperNews')
             }
         };
 
-        auth.register = function(user){
-            return $api.post('/auth/register', user).success(function(data){
-                auth.saveToken(data.token);
-            });
+        auth.register = function (user) {
+            return $http.post('/auth/register', user)
+                .success(function (data) {
+                    auth.saveToken(data.token);
+                });
         };
 
-        auth.logIn = function(user){
-            return $api.post('/auth/login', user).success(function(data){
-                auth.saveToken(data.token);
-            });
+        auth.logIn = function (user) {
+            return $http.post('/auth/login', user)
+                .success(function (data) {
+                    auth.saveToken(data.token);
+                });
         };
 
-        auth.logOut = function(){
+        auth.logOut = function () {
             $window.localStorage.removeItem('flapper-news-token');
         };
 

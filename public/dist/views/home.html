@@ -1,6 +1,7 @@
 <div class="page-header">
     <h1>Flapper News</h1>
 </div>
+
 <div ng-repeat="post in posts | orderBy: '-upvotes'">
     <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(post)"></span>
     <span class="posts">
@@ -14,7 +15,10 @@
 <div class="page-header">
     <h1>Add a post</h1>
 </div>
-<form ng-submit="addPost()">
+<div ng-hide="isLoggedIn()">
+    <h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can add a post.</h3>
+</div>
+<form ng-submit="addPost()" ng-show="isLoggedIn()">
     <div class="form-group">
         <input class="form-control" type="text" ng-model="title" placeholder="Titel" />
     </div>
