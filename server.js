@@ -47,10 +47,13 @@ app.use(function (req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
+        console.log('Error handling, error: ', err);
+
         res.status(err.status || 500);
-        res.render('error', {
+        res.json({
             message: err.message,
-            error: err
+            code: err.code,
+            status: err.status
         });
     });
 }
@@ -59,13 +62,14 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    res.json({
         message: err.message,
-        error: {}
+        code: err.code,
+        status: err.status
     });
 });
 
-//set servers port
+//set serversport
 app.set('port', process.env.PORT || 3000);
 var server = app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + server.address().port);
