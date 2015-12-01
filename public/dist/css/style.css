@@ -26,6 +26,7 @@ form {
   margin-top: 40px; }
 
 .slide {
+  position: absolute;
   box-shadow: 0px 0px 15px #999; }
 
 .arrows {
