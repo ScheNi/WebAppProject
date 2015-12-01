@@ -1,4 +1,4 @@
-angular.module('flapperNews', ['ui.router'])
+angular.module('flapperNews', ['ui.router', 'ngAnimate'])
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider
