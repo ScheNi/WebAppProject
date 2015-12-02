@@ -1,3 +1,5 @@
+require('dotenv').load();
+
 // modules =================================================
 var express = require('express');
 var app = express();

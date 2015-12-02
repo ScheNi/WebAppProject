@@ -10,8 +10,7 @@ router.post('/register', function (req, res, next) {
     }
 
     User.findOne({'username': req.body.username}, function (err, user) {
-        console.log(user);
-        console.log(err);
+
         if (user) {
             return res.status(400).json({message: 'There is already an account with this username'});
         }

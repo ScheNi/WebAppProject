@@ -5,7 +5,7 @@ var Post = mongoose.model('Post');
 var Comment = mongoose.model('Comment');
 var jwt = require('express-jwt');
 //middleware for authenticating jwt tokens
-var auth = jwt({secret: 'SECRET', userProperty: 'payload'});
+var auth = jwt({secret: process.env.JWT_SECRET, userProperty: 'payload'});
 
 router.get('/posts', function (req, res, next) {
     Post.find(function (err, posts) {
