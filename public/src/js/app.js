@@ -1,4 +1,4 @@
-angular.module('flapperNews', ['ui.router', 'ngAnimate'])
+angular.module('flapperNews', ['ui.router', 'ngAnimate', 'toastr'])
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider
@@ -21,6 +21,10 @@ angular.module('flapperNews', ['ui.router', 'ngAnimate'])
                         return $posts.get($stateParams.id);
                     }]
                 }
+            }).state('images', {
+                url: '/images',
+                templateUrl: '/views/images.html',
+                controller: 'ImagesCtrl',
             }).state('login', {
                 url: '/login',
                 templateUrl: '/views/login.html',

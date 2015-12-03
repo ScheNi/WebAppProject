@@ -1,9 +1,16 @@
 angular.module('flapperNews')
-    .factory('$posts', ['$http', '$auth', function ($http, $auth) {
+    .factory('$posts', ['$http', '$auth', 'toastr', function ($http, $auth, toastr) {
 
         var o = {
             posts: []
         };
+
+        function notAuthorized(err) {
+            if (err.status == 401 && err.code=="invalid_token") {
+                toastr.error('If you want to upvote, you must be signed in', 'Please sign in');
+            }
+        }
+
 
         o.getAll = function () {
             return $http.get('/posts')
@@ -25,6 +32,9 @@ angular.module('flapperNews')
                 headers: {Authorization: 'Bearer ' + $auth.getToken()}
             }).success(function (data) {
                 post.upvotes += 1;
+            }).error(function(err) {
+                console.log(err);
+                notAuthorized(err);
             });
         };
 
@@ -46,6 +56,8 @@ angular.module('flapperNews')
                 headers: {Authorization: 'Bearer ' + $auth.getToken()}
             }).success(function (data) {
                 comment.upvotes += 1;
+            }).error(function(err) {
+                notAuthorized(err);
             });
         };
 

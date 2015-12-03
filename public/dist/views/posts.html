@@ -1,22 +1,29 @@
-<div class="page-header">
-    <h3>
+
+    <h2>
         <a ng-show="post.link" href="{{ post.link }}"> {{ post.title }} </a>
         <span ng-hide="post.link">{{ post.title }}</span>
         <span ng-show="post.author">
-          posted by <a>{{post.author}}</a> |
+            |  posted by {{post.author}}
         </span>
-    </h3>
+    </h2>
+
+<div ng-hide="post.comments.length">
+    <h4>There are no comments</h4>
 </div>
 <div ng-repeat="comment in post.comments | orderBy: '-upvotes'">
     <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
     {{ comment.upvotes }} - by {{ comment.author }}
     <span class="posts"> {{ comment.body }} </span>
 </div>
+
+
+<div class="page-header">
+    <h2>Add a comment</h2>
+</div>
 <div ng-hide="isLoggedIn()">
-    <h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can comment.</h3>
+    <h4>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can comment.</h4>
 </div>
 <form ng-submit="addComment()" ng-show="isLoggedIn()" style="margin-top: 30px">
-    <h3>Add Comment</h3>
     <div class="form-group">
         <input type="text" class="form-control" ng-model="body" placeholder="Comment" />
     </div>

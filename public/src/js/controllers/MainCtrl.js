@@ -1,5 +1,5 @@
 angular.module('flapperNews')
-    .controller('MainCtrl', ['$scope', '$posts', '$auth', function ($scope, $posts, $auth) {
+    .controller('MainCtrl', ['$scope', '$posts', '$auth', 'toastr', function ($scope, $posts, $auth, toastr) {
 
         $scope.images = [{
             src: 'img1.png',
@@ -23,6 +23,7 @@ angular.module('flapperNews')
 
         $scope.addPost = function () {
             if (!$scope.title || $scope.title === '') {
+                toastr.error('Please check if the title of the post is filled in', 'Missing data');
                 return;
             }
             $posts.create({
