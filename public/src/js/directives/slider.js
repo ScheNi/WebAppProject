@@ -11,21 +11,19 @@ angular.module('flapperNews')
                 scope.currentIndex = 0;
 
                 scope.next = function () {
-                    //if(scope.currentIndex > scope.images.length -1) {
-                    //    scope.currentIndex++;
-                    //} else {
-                    //    scope.currentIndex = 0;
-                    //}
-                    scope.currentIndex < scope.images.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
+                    if(scope.currentIndex < scope.images.length -1) {
+                       scope.currentIndex++;
+                    } else {
+                       scope.currentIndex = 0;
+                    }
                 };
 
                 scope.prev = function () {
-                    //if(scope.currentIndex > 0) {
-                    //    scope.currentIndex--;
-                    //} else {
-                    //    scope.currentIndex = scope.images.length - 1;
-                    //}
-                    scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.images.length - 1;
+                    if(scope.currentIndex > 0) {
+                       scope.currentIndex--;
+                    } else {
+                       scope.currentIndex = scope.images.length - 1;
+                    }
                 };
 
                 scope.$watch('currentIndex', function () {
