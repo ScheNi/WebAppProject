@@ -21,11 +21,13 @@ angular.module('flapperNews', ['ui.router', 'ngAnimate', 'toastr'])
                         return $posts.get($stateParams.id);
                     }]
                 }
-            }).state('images', {
+            })
+            .state('images', {
                 url: '/images',
                 templateUrl: '/views/images.html',
-                controller: 'ImagesCtrl',
-            }).state('login', {
+                controller: 'ImagesCtrl'
+            })
+            .state('login', {
                 url: '/login',
                 templateUrl: '/views/login.html',
                 controller: 'AuthCtrl',
